@@ -10,12 +10,12 @@ document.addEventListener('mousemove', function(e){
 
 gsap.to("#nav", {
     backgroundColor :"#000",
-    height:"100px",
-    duration:0.5,
+    height:"120px",
+    duration:1,
     scrollTrigger:{
         trigger:"#nav",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top -10%",
         end:"top -11%",
         scrub: 1
@@ -34,7 +34,7 @@ gsap.to("#main",{
     }
 })
 
-var navh4 = document.querySelectorAll('#nav h4')
+var navh4 = document.querySelectorAll('#nav')
 navh4.forEach(function(e){
     e.addEventListener('mouseenter', function(){
         crsr.style.scale = 3
