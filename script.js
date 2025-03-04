@@ -11,13 +11,13 @@ document.addEventListener('mousemove', function(e){
 gsap.to("#nav", {
     backgroundColor :"#000",
     height:"120px",
-    duration:1,
+    duration:2,
     scrollTrigger:{
         trigger:"#nav",
         scroller:"body",
         // markers:true,
         start:"top -10%",
-        end:"top -11%",
+        end:"top -15%",
         scrub: 1
     }
     
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
         currentIndex = (currentIndex + 1) % texts.length;
     }
 
-    setInterval(rotateText, 5000);
+    setInterval(rotateText, 2500);
 
 });
 

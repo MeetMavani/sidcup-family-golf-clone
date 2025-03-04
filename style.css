@@ -10,6 +10,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
     color: #fff;
+    cursor: none;
 }
 
 html,body{
@@ -260,14 +261,33 @@ video{
 }
 
 .card{
-    height: 105%;
-    width:25% ;
+    height: 75%;
+    width:26% ;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
     overflow: hidden;
     transition: all ease 0.5s;
+    position: relative;
 }
+
+.card h2{
+    position: absolute;
+    font-size: 200%;
+    left: 7%;
+    bottom: 5%;
+    transition: all ease 0.5s;
+}
+
+.card .card-top-p{
+    position: absolute;
+    font-size: 100%;
+    font-weight: 900;
+    left: 7%;
+    bottom: 13%;
+    transition: all ease 0.5s;
+}
+
 
 #card1{
     background-image: url(./Assets/hero1.avif);
@@ -304,7 +324,7 @@ video{
 
 .overlay p{
     color: #000003c9;
-    font-size: 17px;
+    font-size: 120%;
     padding: 0 35px;
     text-align:justify;
     line-height: 28px;
@@ -314,8 +334,17 @@ video{
     opacity: 1;
 }
 
+.card:hover .card-top{
+    opacity: 0;
+}
+
+.card:hover .card-top-p{
+    opacity: 0;
+}
+
 .card:hover{
-    transform: rotate3d(1,1,0,10deg);
+    transition: all ease 1s;
+    transform: rotate3d(1,1,0,-18deg);
 }
 
 #green-div{
